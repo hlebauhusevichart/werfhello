@@ -17,4 +17,4 @@ spec:
           service:
             name: hello
             port:
-              number: 8010
+              number: 80
