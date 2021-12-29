@@ -20,3 +20,17 @@ spec:
         ports:
         - containerPort: 80
           name: hello
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: hello
+  name: hello
+spec:
+  ports:
+  - name: "hello-service"
+    port: 80
+  selector:
+    app: hello
