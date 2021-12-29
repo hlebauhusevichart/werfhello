@@ -1,6 +1,6 @@
 configVersion: 1
-project: hello
+project: werfhello
 ---
-image: nginx
+image: hello
 dockerfile: Dockerfile
-context: nginx
+context: hello
