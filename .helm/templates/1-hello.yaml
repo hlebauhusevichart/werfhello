@@ -1,3 +1,4 @@
+  GNU nano 5.4                                                                                  /var/k3s/dev/hello.yaml                                                                                            
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -9,9 +10,13 @@ spec:
   selector:
     matchLabels:
       app: hello
+  template:
+    metadata:
+      labels:
+        app: hello
     spec:
       containers:
-      - image: hlebauhusevichart/werfhello
+      - image: hlebauhusevichart/hello@sha256:2f7b66f3364f99964a75568afd80499cd704fb97d06e69a6f74fff892ad5639d
         name: hello
         ports:
         - containerPort: 80
