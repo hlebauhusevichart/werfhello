@@ -9,10 +9,6 @@ spec:
   selector:
     matchLabels:
       app: hello
-  template:
-    metadata:
-      labels:
-        app: hello
     spec:
       containers:
       - image: hlebauhusevichart/werfhello
