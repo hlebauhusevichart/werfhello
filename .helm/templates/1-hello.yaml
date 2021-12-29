@@ -6,6 +6,9 @@ metadata:
   name: hello
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: hello
   template:
     metadata:
       labels:
