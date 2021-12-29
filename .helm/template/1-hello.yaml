@@ -30,6 +30,8 @@ metadata:
 spec:
   ports:
   - name: "hello-service"
-    port: 80
+      targetPort: 80
+      port: 8010
+      nodePort: 32729
   selector:
     app: hello
