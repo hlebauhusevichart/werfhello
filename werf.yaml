@@ -1,5 +1,5 @@
 configVersion: 1
-project: hello
+project: hleb
 ---
 image: hello
 dockerfile: Dockerfile
