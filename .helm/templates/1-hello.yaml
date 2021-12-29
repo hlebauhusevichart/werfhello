@@ -15,7 +15,7 @@ spec:
         app: hello
     spec:
       containers:
-      - image: hlebauhusevichart/hello@sha256:2f7b66f3364f99964a75568afd80499cd704fb97d06e69a6f74fff892ad5639d
+      - image: {{ .Values.werf.image.hello }}
         name: hello
         ports:
         - containerPort: 80
