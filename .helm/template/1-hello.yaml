@@ -14,8 +14,6 @@ spec:
       labels:
         app: hello
     spec:
-      imagePullSecrets:
-        - name: registrysecret
       containers:
       - image: {{ .Values.werf.image.nginx }}
         name: hello
