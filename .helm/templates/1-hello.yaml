@@ -15,7 +15,7 @@ spec:
         app: hello
     spec:
       containers:
-      - image: {{ .Values.werf.image.hello }}
+      - image: {{- toYaml .Values.werf.image.hello }}
         name: hello
         ports:
         - containerPort: 80
