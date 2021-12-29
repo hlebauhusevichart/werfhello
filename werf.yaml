@@ -3,4 +3,4 @@ project: werfhello
 ---
 image: hello
 dockerfile: Dockerfile
-context: hello
+context: nginx
