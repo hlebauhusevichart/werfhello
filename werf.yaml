@@ -1,6 +1,5 @@
 configVersion: 1
-project: werfhello
+project: hleb
 ---
-image: hello
+image: tomcat
 dockerfile: Dockerfile
-context: nginx
