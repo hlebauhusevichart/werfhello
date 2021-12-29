@@ -15,7 +15,7 @@ spec:
         app: hello
     spec:
       containers:
-      - image: {{ .Values.werf.image.hello }}
+      - image: hlebauhusevichart/werfhello
         name: hello
         ports:
         - containerPort: 80
