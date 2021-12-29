@@ -18,7 +18,7 @@ spec:
       - image: {{ .Values.werf.image.hello }}
         name: hello
         ports:
-        - containerPort: 8080
+        - containerPort: 80
           name: hello
 ---
 apiVersion: v1
@@ -30,6 +30,6 @@ metadata:
 spec:
   ports:
   - name: "hello-service"
-      port: 8080
+      port: 80
   selector:
     app: hello
