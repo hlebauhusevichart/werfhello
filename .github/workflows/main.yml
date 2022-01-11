@@ -1,0 +1,24 @@
+name: Project Hello setup
+
+on: 
+  workflow_dispatch:
+    branches:
+      - main
+      - dev
+
+jobs:
+  docker_push:
+    
+    runs-on: ubuntu-latest
+
+    steps:    
+      # Check repository
+      - name: Checkout data
+        uses: actions/checkout@v2
+      
+      #Check vars
+      - name: Vars test
+        run: |
+          echo $HLEB
+          
+
