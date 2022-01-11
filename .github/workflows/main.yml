@@ -19,6 +19,6 @@ jobs:
       #Check vars
       - name: Vars test
         run: |
-          echo ${{ HLEB }}
+          echo ${{ secrets.HLEB }}
           
 
