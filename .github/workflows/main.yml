@@ -16,9 +16,13 @@ jobs:
       - name: Checkout data
         uses: actions/checkout@v2
       
-      #Check vars
-      - name: Vars test
+      #Docker steps          
+      - name: Docker login
+        env:
+          LOGIN: ${{secrets.LOGIN}}
+          PASS: ${{secrets.PASS}}
         run: |
-          echo ${{ secrets.HLEB }}
-          
+          echo $LOGIN
+          echo $PASS 
+          docker login -u $LOGIN -p $PASS
 
