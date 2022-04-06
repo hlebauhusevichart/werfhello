@@ -19,11 +19,11 @@ jobs:
       - name: Set env
         run: |
           touch .env
-          echo HLEB=12345 >> .env
+          echo "HLEB=12345" >> .env
           
       - name: Echo HLEB
         run: |
-          echo ${{ env.HLEB }}
+          echo $HLEB
       
       #Docker steps          
       #- name: Docker login
