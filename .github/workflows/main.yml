@@ -16,22 +16,13 @@ jobs:
       - name: Checkout data
         uses: actions/checkout@v2
       
-      - name: Set env
-        run: |
-          touch .env
-          echo "HLEB=12345" >> .env
-          
-      - name: Echo HLEB
-        run: |
-          echo $HLEB
-      
       #Docker steps          
-      #- name: Docker login
-      #  env:
-      #    LOGIN: ${{secrets.LOGIN}}
-      #    PASS: ${{secrets.PASS}}
-      #  run: |
-      #    echo $LOGIN
-      #    echo $PASS 
-      #    docker login -u $LOGIN -p $PASS
+      - name: Docker login
+        env:
+          LOGIN: ${{secrets.LOGIN}}
+          PASS: ${{secrets.PASS}}
+        run: |
+          echo $LOGIN
+          echo $PASS 
+          docker login -u $LOGIN -p $PASS
 
