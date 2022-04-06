@@ -2,9 +2,6 @@ name: Project Hello setup
 
 on: 
   workflow_dispatch:
-    branches:
-      - main
-      - dev
 
 jobs:
   docker_push:
